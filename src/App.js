@@ -79,22 +79,6 @@ function App() {
       <Routes>
         <Route element={<UserLayout />}>
           <Route index element={<Home />} />
-          <Route path="/danh-muc" element={<Product />} />
-          {/* <Route path="/gioi-thieu" element={<Intro />} /> */}
-          {/* <Route path="/tin-tuc" element={<News />} /> */}
-          <Route path="/gio-hang" element={<Cart />} />
-          <Route path="/thanh-toan" element={<Buy />} />
-          {/* <Route path="/don-hang" element={<DonHang />} /> */}
-          <Route path="/san-pham/:id" element={<ProductDetail />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/lien-he" element={<Contact />} />
-          <Route path="/setting" element={<Setting />} />
-          <Route path="/order" element={<Order />} />
-
-
-
-
-          {/* <Route path="/da" element={<News/>} /> */}
         </Route>
         <Route element={<LoginLayout />}>
           <Route path="/register" element={<Register />} />
@@ -106,17 +90,11 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="products" element={<Products />} />
           <Route path="category" element={<Category></Category>} />
-          <Route path="customers" element={<Customers />} />
-          <Route path="coupons" element={<Coupons />} />
-          <Route path="our-staff" element={<OurStaff />} />
-          {/* <Route path="news" element={<AdminNews />} /> */}
-          <Route path="orders" element={<Orders />} />
           <Route path="products/add-product" element={<AdminAddProduct />} />
           <Route path="products/edit-product/:id" element={<AdminEditProduct />} />
           <Route path="category/add-category" element={<AddCategory />} />
           <Route path="category/edit-category/:id" element={<EditCategory />} />
-          <Route path="coupons/add-coupon" element={<AddCoupon />} />
-          <Route path="coupons/edit-coupon/:id" element={<EditCoupon />} />
+          
         </Route>
       </Routes>
       {/* <ToastContainer newestOnTop />
