@@ -1,40 +1,20 @@
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import Home from './views/Home/Home';
-import Product from './views/Product/Product';
-import Contact from './views/Contact/Contact';
-import Setting from './views/Setting/Setting';
-import Order from './views/Order/Order';
-import Blog from './views/Blog/Blog';
 import Login from './views/RegisterLogin/Login';
 import Register from './views/RegisterLogin/Register';
-// import News from './views/News/News';
-import Cart from './views/Cart/Cart'
-import Buy from './views/Buy/Buy'
-import ProductDetail from './views/ProductDetail/ProductDetail';
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
 import AdminSidebar from './components/AdminSidebar/AdminSidebar'
 import Dashboard from './views/Admin/Dashboard/Dashboard'
 import AdminHeader from './components/AdminHeader/AdminHeader'
+import Header from './components/Header/Header'
+
 import Products from './views/Admin/Products/Products'
 import Category from './views/Admin/Category/Category';
-import Customers from './views/Admin/Customers/Customers';
-import Coupons from './views/Admin/Coupons/Coupons';
-import OurStaff from './views/Admin/OurStaff/OurStaff';
-// import AdminNews from './views/Admin/News/News';
-import Orders from './views/Admin/Orders/Orders';
 import AdminAddProduct from './views/Admin/Products/AddProduct';
 import AdminEditProduct from './views/Admin/Products/EditProduct';
 import EditCategory from './views/Admin/Category/EditCategory';
 import AddCategory from './views/Admin/Category/AddCategory';
-import AddCoupon from './views/Admin/Coupons/AddCoupon';
-import EditCoupon from './views/Admin/Coupons/EditCoupon';
 import { ToastContainer } from 'react-toastify'
 import EditProfile from "./views/Admin/EditProfile/EditProfile"
-// import Intro from './views/Intro/Intro'
-// import DonHang from './views/DonHang/DonHang'
-// import MessengerCustomerChat from 'react-messenger-customer-chat'
-import Chatbot from "./chatbot";
 
 const UserLayout = () => {
   return (
@@ -43,7 +23,7 @@ const UserLayout = () => {
       <div className="flex-1">
         <Outlet />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
@@ -97,13 +77,8 @@ function App() {
           
         </Route>
       </Routes>
-      {/* <ToastContainer newestOnTop />
-      <MessengerCustomerChat 
-      pageId="110075895291944"
-      appId="3317137035215894"
-      /> */}
+     
       <ToastContainer></ToastContainer>
-      <Chatbot></Chatbot>
     </BrowserRouter>
   );
 }

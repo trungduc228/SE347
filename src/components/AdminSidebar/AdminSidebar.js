@@ -21,26 +21,26 @@ export default function AdminLeftMenu() {
             label: 'Category',
             link: '/admin/category',
         },
-        {
-            icon: <FiUsers />,
-            label: 'Customers',
-            link: '/admin/customers',
-        },
-        {
-            icon: <FiCheckCircle />,
-            label: 'Orders',
-            link: '/admin/orders',
-        },
-        {
-            icon: <FiGift />,
-            label: 'Coupons',
-            link: '/admin/coupons',
-        },
-        {
-            icon: <FiUser />,
-            label: 'Our Staff',
-            link: '/admin/our-staff',
-        },
+        // {
+        //     icon: <FiUsers />,
+        //     label: 'Customers',
+        //     link: '/admin/customers',
+        // },
+        // {
+        //     icon: <FiCheckCircle />,
+        //     label: 'Orders',
+        //     link: '/admin/orders',
+        // },
+        // {
+        //     icon: <FiGift />,
+        //     label: 'Coupons',
+        //     link: '/admin/coupons',
+        // },
+        // {
+        //     icon: <FiUser />,
+        //     label: 'Our Staff',
+        //     link: '/admin/our-staff',
+        // },
         // {
         //     icon: <FiMessageCircle />,
         //     label: 'News',
