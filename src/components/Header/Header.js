@@ -158,10 +158,10 @@ export default function Header() {
         </div>
       </div>
       <div className="w-full bg-white shadow-md mb-3 z-20">
-        <Container className="w-full flex justify-center items-center py-5">
-          {/* <Link to="/">
+        <Container className="flex justify-between items-center py-5">
+          <Link to="/">
             <img src="/logo1.png" alt="logo" className="image-logo1 hidden md:block" />
-          </Link> */}
+          </Link>
           
           <ul className="flex items-center ml-5">
             {
@@ -183,7 +183,7 @@ export default function Header() {
 
             
           </ul>
-          {/* <div>
+          <div>
               <div className="group relative cart-item text-black-2 cursor-pointer flex items-center transition-all duration-100 ease-linear rounded hover:p-3 hover:bg-[#ccc] hover:rounded-lg">
                 <span className="hidden md:block text-md font-medium mr-3">
                   {totalPrice || 0} <span className="underline">đ</span>
@@ -234,7 +234,7 @@ export default function Header() {
                   }
                 </div>
               </div>
-          </div> */}
+          </div>
         </Container>
       </div>
     </div>
